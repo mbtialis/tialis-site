@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>MB TIALIS</title>
+<meta name="description" content="MB TIALIS - imones rekvizitai ir kontaktai">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Spalvos ir pagrindai */
+  :root {
+    --ink: #1c2a33;
+    --muted: #5b6b75;
+    --line: #d5dde1;
+    --paper: #f7f9fa;
+    --mark: #2f6f7e;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink: #e6edf0;
+      --muted: #9fb0b8;
+      --line: #33434b;
+      --paper: #141c21;
+      --mark: #6fb3c2;
+    }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    font-size: 17px;
+    line-height: 1.55;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+  }
+  main { width: 100%; max-width: 640px; }
+
+  /* Pavadinimas */
+  h1 {
+    font-size: clamp(2.6rem, 9vw, 4.2rem);
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin: 0 0 20px;
+    border-left: 6px solid var(--mark);
+    padding-left: 18px;
+  }
+  .lead { color: var(--muted); margin: 0 0 40px; max-width: 34em; }
+
+  /* Rekvizitai */
+  dl {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 14px 28px;
+    margin: 0;
+    padding: 28px 0;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+  }
+  dt { color: var(--muted); }
+  dd { margin: 0; font-weight: 500; }
+  a { color: var(--mark); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:focus-visible { outline: 2px solid var(--mark); outline-offset: 3px; }
+
+  .en { margin-top: 32px; color: var(--muted); font-size: 15px; }
+  .en p { margin: 0 0 6px; }
+
+  @media (max-width: 480px) {
+    dl { grid-template-columns: 1fr; gap: 2px; }
+    dd { margin-bottom: 12px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1>MB TIALIS</h1>
+  <p class="lead">Kompiuterių remontas ir IT paslaugos.</p>
+
+  <dl>
+    <dt>Pavadinimas</dt>
+    <dd>MB TIALIS</dd>
+
+    <dt>Įmonės kodas</dt>
+    <dd>304962763</dd>
+
+    <dt>PVM mokėtojo kodas</dt>
+    <dd>LT100012043214</dd>
+
+    <dt>Adresas</dt>
+    <dd>Sūduvių g. 69, Antežerių k., LT-14166 Vilniaus r. sav., Lietuva</dd>
+
+    <dt>Telefonas</dt>
+    <dd><a href="tel:+37067044277">+370 670 44277</a></dd>
+
+    <dt>El. paštas</dt>
+    <dd><a href="mailto:info@tialis.lt">info@tialis.lt</a></dd>
+  </dl>
+
+  <div class="en" lang="en">
+    <p>MB TIALIS is a small partnership registered in Lithuania, providing computer repair and IT services.</p>
+    <p>Company code 304962763, VAT LT100012043214. Sūduvių g. 69, Antežerių k., LT-14166 Vilnius district, Lithuania. Phone +370 670 44277, <a href="mailto:info@tialis.lt">info@tialis.lt</a></p>
+  </div>
+</main>
+</body>
+</html>
